@@ -24,16 +24,9 @@ export default function TextForm(props) {
 
   return (
     <div>
-      <h1>{props.heading}</h1>
-
+       <h2>{props.heading}</h2>
       <div className="mb-3 mt-4">
-        <textarea
-          className="form-control"
-          id="myBox"
-          value={text}
-          onChange={handleOnChange}
-          rows="8"
-        ></textarea>
+        <textarea className="form-control" id="myBox" value={text} onChange={handleOnChange} rows="8"></textarea>
       </div>
 
       <button className="btn btn-primary mx-2" onClick={handleClearClick}>
@@ -46,7 +39,9 @@ export default function TextForm(props) {
       <div className="bd-clipboard">
         <div className="mt-5">
           <h2>Preview</h2>
-          <p>{text}</p>
+          <div className="shadow p-3 bg-primary text-white rounded ">
+           <p>{text}</p>
+          </div>
         </div>
       </div>
     </div>
