@@ -8,7 +8,8 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar title="TextUtils" aboutText="About Us" />
+
+        <Navbar title="Math tool" aboutText="About Us" />
 
         <div className="container my-3">
           {/* <TextForm heading = "Enter your text to analyse"/> */}
@@ -16,8 +17,10 @@ function App() {
           {/* <About/> */}
 
           <Routes>
+
             < Route path="/about" element = {<About />}/>
-            <Route path="/" element = {<TextForm heading="Enter your text to analyse" />}/>
+
+            <Route path="/" element = {<TextForm heading="Enter your text here" />}/>
               
           </Routes>
 
