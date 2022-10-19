@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { MathComponent } from "mathjax-react";
 
 export default function TextForm(props) {
 
@@ -25,6 +26,7 @@ export default function TextForm(props) {
   return (
     <div>
        <h2>{props.heading}</h2>
+       
       <div className="mb-3 mt-4">
         <textarea className="form-control" id="myBox" value={text} onChange={handleOnChange} rows="8"></textarea>
       </div>
@@ -39,8 +41,10 @@ export default function TextForm(props) {
       <div className="bd-clipboard">
         <div className="mt-5">
           <h2>Preview</h2>
-          <div className="shadow p-3 bg-primary text-white rounded ">
            <p>{text}</p>
+          <h2>Latext Preview</h2> 
+          <div className="shadow p-3 bg-white text-dark rounded ">
+          <MathComponent tex={String.raw `${text}` } />
           </div>
         </div>
       </div>
