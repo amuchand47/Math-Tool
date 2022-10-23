@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 
-
 export default function About() {
 
   const [myStyle, setMyStyle] = useState({
@@ -37,7 +36,7 @@ export default function About() {
   return (
 
     <div className='container' style={myStyle}>
-       <h1 className='my-3'>About Us</h1>
+       <h1 className='my-3 bg-success text-white'>Impoartant Solution</h1>
         <div className="accordion" id="accordionExample" >
         <div className="accordion-item" style={myStyle}>
             <h2 className="accordion-header" id="headingOne" >
@@ -47,7 +46,7 @@ export default function About() {
             </h2>
             <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div className="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <strong>This is the first item's accordion body.</strong> Here we need to upload the screenshot of output, So I uploaded the output Screenshot only. <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
             </div>
         </div>
